@@ -1,22 +1,25 @@
-# LLM-Computer_Vision
+# LLM-Computer_Vision 🤖👁️
 
-## Overview
+![Built with Love](https://img.shields.io/badge/Built%20with-❤️-ff69b4)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+
+## Overview 🌟
 
 This project integrates Large Language Models (LLMs) with computer vision tasks, enabling intelligent planning and execution of complex visual analysis workflows. It features a modular architecture with a FastAPI backend, a dedicated executor for vision tasks, an LLM-driven planner, and a React-based user interface. The system is designed to interpret high-level natural language requests, break them down into actionable computer vision steps, execute them, and present the results.
 
-## Features
+## Features ✨
 
-*   **LLM-Powered Planning:** Utilizes Large Language Models to generate dynamic execution plans for computer vision tasks based on natural language input.
-*   **Modular Architecture:** Separates concerns into distinct services:
-    *   **Backend:** Manages API requests, job queues, artifact storage, and overall system orchestration.
-    *   **Planner:** Responsible for interpreting user requests and generating execution plans.
-    *   **Executor:** Executes the steps defined by the planner, interacting with computer vision models and tools.
-    *   **UI:** Provides an intuitive web interface for users to submit tasks, monitor progress, and view results.
-*   **Containerized Deployment:** Leverages Docker and Docker Compose for easy setup, deployment, and scalability.
-*   **Shared DSL:** Defines a Domain Specific Language (DSL) for consistent communication and data modeling across services.
-*   **Health Monitoring:** Includes API endpoints for checking the health and status of various services.
+*   **LLM-Powered Planning:** 🧠 Utilizes Large Language Models to generate dynamic execution plans for computer vision tasks based on natural language input.
+*   **Modular Architecture:** 🏗️ Separates concerns into distinct services:
+    *   **Backend:** 🚀 Manages API requests, job queues, artifact storage, and overall system orchestration.
+    *   **Planner:** 📝 Responsible for interpreting user requests and generating execution plans.
+    *   **Executor:** ⚙️ Executes the steps defined by the planner, interacting with computer vision models and tools.
+    *   **UI:** 🌐 Provides an intuitive web interface for users to submit tasks, monitor progress, and view results.
+*   **Containerized Deployment:** 🐳 Leverages Docker and Docker Compose for easy setup, deployment, and scalability.
+*   **Shared DSL:** 🤝 Defines a Domain Specific Language (DSL) for consistent communication and data modeling across services.
+*   **Health Monitoring:** 🩺 Includes API endpoints for checking the health and status of various services.
 
-## Technologies Used
+## Technologies Used 🛠️
 
 *   **Backend:** Python, FastAPI
 *   **Frontend:** React, TypeScript, Vite
@@ -26,15 +29,15 @@ This project integrates Large Language Models (LLMs) with computer vision tasks,
 *   **Package Management:** `pyproject.toml` (Poetry/PDM) for Python, `npm`/`yarn` for Node.js
 *   **Styling:** CSS
 
-## Setup and Installation
+## Setup and Installation 🚀
 
 This project uses Docker Compose for a streamlined setup.
 
-### Prerequisites
+### Prerequisites ✅
 
 *   Docker Desktop (or Docker Engine and Docker Compose) installed on your system.
 
-### Steps
+### Steps 🪜
 
 1.  **Clone the repository:**
     ```bash
@@ -63,7 +66,7 @@ This project uses Docker Compose for a streamlined setup.
     docker-compose down
     ```
 
-## Project Structure
+## Project Structure 📂
 
 ```
 .
@@ -92,14 +95,32 @@ This project uses Docker Compose for a streamlined setup.
 └── README.md             # This file
 ```
 
-## Usage
+## Usage 💡
 
 (Detailed instructions on how to use the application, e.g., submitting a task via the UI, example natural language prompts, expected outputs.)
 
-## Contributing
+## Roadmap 🗺️
+
+*   **Phase 1: Core Functionality**
+    *   Implement basic LLM-to-CV task planning.
+    *   Develop core executor capabilities for common CV operations.
+    *   Establish robust API endpoints for job submission and status tracking.
+    *   Create a user-friendly UI for task interaction.
+*   **Phase 2: Advanced Features**
+    *   Integrate more sophisticated LLM models for enhanced planning.
+    *   Expand executor to support a wider range of computer vision models and libraries.
+    *   Implement artifact visualization and detailed result reporting.
+    *   Add user authentication and authorization.
+*   **Phase 3: Scalability & Optimization**
+    *   Optimize performance for large-scale CV tasks.
+    *   Implement distributed execution for the executor.
+    *   Enhance error handling and resilience across all services.
+    *   Improve deployment and CI/CD pipelines.
+
+## Contributing 🤝
 
 We welcome contributions! Please see our `CONTRIBUTING.md` (if available) for guidelines on how to contribute to this project.
 
-## License
+## License 📄
 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
