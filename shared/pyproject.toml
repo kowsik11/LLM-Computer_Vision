@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "llm-cv-shared"
+version = "0.1.0"
+description = "Shared DSL models for the LLM + CV automation platform."
+authors = ["LLM_CV Team <automation@example.com>"]
+packages = [{ include = "shared" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+pydantic = "^2.7.1"
+
+[build-system]
+requires = ["poetry-core>=1.8.2"]
+build-backend = "poetry.core.masonry.api"
+

@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "llm-cv-executor"
+version = "0.1.0"
+description = "Playwright-based executor for the LLM + Computer Vision automation platform."
+authors = ["LLM_CV Team <automation@example.com>"]
+packages = [{ include = "executor" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+playwright = "^1.43.0"
+pydantic = "^2.7.1"
+structlog = "^24.1.0"
+tenacity = "^8.2.3"
+aiofiles = "^24.1.0"
+Pillow = "^10.3.0"
+numpy = "^1.26.4"
+llm-cv-shared = { path = "../shared", develop = true }
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.1"
+pytest-asyncio = "^0.23.6"
+
+[build-system]
+requires = ["poetry-core>=1.8.2"]
+build-backend = "poetry.core.masonry.api"
